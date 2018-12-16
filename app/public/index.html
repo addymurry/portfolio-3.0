@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Addison Murry</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" href="style\style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+</head>
+
+
+<nav class="navbar is-transparent">
+    <div  class="navbar-brand">
+
+        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div id="nav" id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="app\index.html">
+                <a id="home" class="button is-medium">
+                    <i class="fas fa-home"></i> Home
+                </a>
+            </a>
+            <div>
+            </div>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="field is-grouped">
+                    <p class="control">
+                        <a class="bd-tw-button button" href="https://www.linkedin.com/in/addison-murry-bb546a177/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_top%3B%2BCoMQ6T5RD2%2FpTtZViaBNg%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_search_srp_top-search_srp_result&lici=LJJJAQ9SRdedU3xFqVCg3Q%3D%3D">
+                            <span class="icon">
+                                <i class="fab fa-linkedin"></i>
+                            </span>
+                            <span>
+                                Linkedin
+                            </span>
+                        </a>
+                    </p>
+                    <p class="control">
+                        <a id="Gbutton" class="button is-primary" href="https://github.com/addymurry">
+                            <span class="icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>GitHub</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<br>
+
+<body>
+    <div id="tileAll">
+        <div class="tile is-ancestor">
+            <div class="tile is-vertical is-8">
+                <div class="tile">
+                    <div class="tile is-parent is-vertical">
+                        <article id="tiles" class="tile is-child notification is-primary">
+                            <p class="title">About Me</p>
+                            <figure id="me" class="image is-128x128">
+                                <img src="style/me.jpg">
+                            </figure>
+                            <p id="text" class="subtitle">My name is Addison Murry I am a Kansas University coding
+                                bootcamp graduate. While in school I have had exposure and practice with languages such
+                                as html, css, javascript. As well as working with sql and nonsql databases such as mySQL and mongoDb.
+                                Learning from the very knowledgeable staff I feel I am prepared to take my next step into the workforce.
+                                If you have any questions feel free to get in contact with me or input your info in the box to the right.
+                            </p>
+                        </article>
+
+                        <article id="tiles" class="tile is-child notification is-warning">
+                            <p class="title">Projects</p>
+                            <figure class="pro" class="image is-96x96">
+                                <p class="names">Project 1</p>
+                                <a href="https://github.com/akatzer/Kingpin2.0-Project-1">
+                                    <img src="style\drone.jpg"></a>
+                            </figure>
+                            <figure class="pro" class="image is-96x96">
+                                    <p class="names">Project 2</p>
+                                <a href="https://github.com/akatzer/Project-2-Dinero">
+                                    <img src="style/bank.jpg"></a>
+                            </figure>
+                            <figure class="pro" class="image is-96x96">
+                                    <p class="names">Bamazon</p>
+                                <a href="https://github.com/addymurry/bamazon">
+                                    <img src="style/bamazon.png"></a>
+                            </figure>
+                            <figure class="pro" class="image is-96x96">
+                                    <p class="names">Train Time</p>
+                                <a href="https://github.com/addymurry/train-time">
+                                    <img src="style/train.jpg"></a>
+                            </figure>
+                            <figure class="pro" class="image is-96x96">
+                                    <p class="names">First Assingment</p>
+                                <a href="https://github.com/addymurry/Responsive-Portfolio">
+                                    <img src="style/job.jpg"></a>
+                            </figure>
+
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="tile is-parent">
+                <article id="tiles" class="tile is-child notification is-success">
+                    <div class="content">
+                        <p class="title">Contact Me</p>
+                        <div class="subtitle">
+                            <form action="/submit" method="post">
+                                <div class="field">
+                                    <label class="label">Name</label>
+                                    <div class="control has-icons-left">
+                                        <input class="input" type="text" name="Name" placeholder="Name">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label class="label">Organization</label>
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input class="input" type="text" name="Organization" placeholder="Organization"
+                                            value="">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-building"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label class="label">Email</label>
+                                    <div class="control has-icons-left">
+                                        <input class="input" type="email" name="Email" placeholder="Email" value="">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
+                                    </div>
+
+
+                                    <div class="field">
+                                        <label class="label">Message</label>
+                                        <div class="control">
+                                            <textarea class="textarea" name="Message" placeholder="Question/Comments"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="field is-grouped">
+                                        <div class="control">
+                                            <button class="button is-link" type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </article>
+    </div>
+    </div>
+    </div>
+
+    <br>
+
+</body>
+<footer id="foot" class="footer">
+    <div class="content has-text-left">
+        <p>
+            <strong>Addison Murry</strong><a></a> contact at</a> <a href="http://gmail.com">addisonnmurry@gmail.com</a>.
+            Kansas
+            University Coding BootCamp
+            <a href="https://bootcamp.ku.edu/coding">KU</a>.
+        </p>
+    </div>
+</footer>
+
+</html>

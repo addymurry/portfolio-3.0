@@ -1,0 +1,45 @@
+
+body{
+    background-repeat: no-repeat, repeat;
+    background-image: url("background.jpg"), linear-gradient(to bottom, #ccb, #fefefe );
+    height: 100%;   
+    background-size: auto;
+}
+#nav{
+    background-image: linear-gradient(to right, #9c9c9c,#e7e1df,#f7f3f2,#fefefe);
+}
+#me{
+    float: left;
+    margin: 10px;
+}
+.pro{
+    display: inline-block;
+    margin:25px;
+    padding: 5px;
+    width: 96px;
+    height: 96px;
+}
+#home{
+    margin:4px;
+}
+#Gbutton{
+    background-color: black;
+}
+#tileAll{
+    margin: 50px;
+    padding:30px;
+} 
+#tiles{
+    background-color: lightgray;
+    color:black;
+}
+#foot{
+    padding: 10px;
+    background-repeat: no-repeat, repeat;
+    background-image: linear-gradient(to right, #9c9c9c,#e7e1df,#f7f3f2,#fefefe);
+
+}
+.names{
+text-align: middle;
+font-weight: bold;
+};
