@@ -2,7 +2,7 @@ var express = require("express");
 var logger = require("morgan");
 var mongoose = require("mongoose");
 
-var PORT = 3025;
+var PORT = 3105;
 
 var recruit = require("./model");
 
@@ -20,14 +20,7 @@ mongoose.connect("mongodb://localhost/portfoliodb", { useNewUrlParser: true });
 app.post("/submit", function(req, res) {
 
   recruit.create(req.body)
-    .then(function(dbRecruit) {
- 
-      res.json(dbRecruit);
-    })
-    .catch(function(err) {
 
-      res.json(err);
-    });
 });
 
 
