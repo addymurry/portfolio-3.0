@@ -1,8 +1,11 @@
 var express = require("express");
 var logger = require("morgan");
 var mongoose = require("mongoose");
+var path = require("path");
 
-var PORT = process.env.PORT || 3000
+var PORT = process.env.PORT || 3120;
+
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/portfoliodb";
 
 var recruit = require("./model");
 
@@ -13,9 +16,9 @@ app.use(logger("dev"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static("public"));
+app.use(express.static("app/public"));
 
-mongoose.connect("mongodb://localhost/portfoliodb", { useNewUrlParser: true });
+mongoose.connect(MONGODB_URI, {useNewUrlParser: true});
 
 app.post("/submit", function(req, res) {
 
