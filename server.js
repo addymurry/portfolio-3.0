@@ -1,7 +1,7 @@
 var express = require("express");
 var logger = require("morgan");
 var mongoose = require("mongoose");
-var path = require("path");
+
 
 var PORT = process.env.PORT || 3120;
 
@@ -18,14 +18,15 @@ app.use(express.json());
 
 app.use(express.static("app/public"));
 
-mongoose.connect(MONGODB_URI, {useNewUrlParser: true});
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
-app.post("/submit", function(req, res) {
+app.post("", function (req, res) {
 
-
+  recruit.create(req.body);
+  res.end();
 });
 
 
-app.listen(PORT, function() {
+app.listen(PORT, function () {
   console.log("App running on port " + PORT + "!");
 });
