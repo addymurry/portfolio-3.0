@@ -2,7 +2,7 @@ var express = require("express");
 var logger = require("morgan");
 var mongoose = require("mongoose");
 
-var PORT = 3105;
+var PORT = process.env.PORT || 3000
 
 var recruit = require("./model");
 
