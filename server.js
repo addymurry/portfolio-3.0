@@ -22,7 +22,6 @@ mongoose.connect(MONGODB_URI, {useNewUrlParser: true});
 
 app.post("/submit", function(req, res) {
 
-  recruit.create(req.body)
 
 });
 
