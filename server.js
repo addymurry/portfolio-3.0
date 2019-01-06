@@ -5,7 +5,7 @@ var path = require("path");
 
 var PORT = process.env.PORT || 3220;
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/portfoliodb";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongolab-flexible-64294";
 
 var recruit = require("./model");
 
