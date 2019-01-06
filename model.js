@@ -17,7 +17,6 @@ var recruitSchema = new Schema({
 
   Email: {
     type: String,
-    unique: true,
     match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
   },
 
