@@ -6,7 +6,7 @@ var path = require("path");
 
 var PORT = process.env.PORT || 8200;
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://recruit:cooltulip941@ds147684.mlab.com:47684/portfoliodb";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://addisonmurry:cooltulip941@ds147684.mlab.com:47684/portfoliodb";
 
 
 
