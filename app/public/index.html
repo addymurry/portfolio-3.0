@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
     <link rel="stylesheet" href="style/style.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
     
     
 
@@ -126,11 +126,11 @@
                     <div class="content">
                         <p class="title">Contact Me</p>
                         <div class="subtitle">
-                            <form action="/submit" method="post">
+                            <form>
                                 <div class="field">
                                     <label class="label">Name</label>
                                     <div class="control has-icons-left">
-                                        <input class="input" type="text" name="Name" placeholder="Name">
+                                        <input id="Name" class="input" type="text" name="Name" placeholder="Name">
                                         <span class="icon is-small is-left">
                                             <i class="fas fa-user"></i>
                                         </span>
@@ -140,7 +140,7 @@
                                 <div class="field">
                                     <label class="label">Organization</label>
                                     <div class="control has-icons-left has-icons-right">
-                                        <input class="input" type="text" name="Organization" placeholder="Organization"
+                                        <input id="Organization" class="input" type="text" name="Organization" placeholder="Organization"
                                             value="">
                                         <span class="icon is-small is-left">
                                             <i class="fas fa-building"></i>
@@ -151,7 +151,7 @@
                                 <div class="field">
                                     <label class="label">Email</label>
                                     <div class="control has-icons-left">
-                                        <input class="input" type="email" name="Email" placeholder="Email" value="">
+                                        <input id="Email" class="input" type="email" name="Email" placeholder="Email" value="">
                                         <span class="icon is-small is-left">
                                             <i class="fas fa-envelope"></i>
                                         </span>
@@ -161,13 +161,13 @@
                                     <div class="field">
                                         <label class="label">Message</label>
                                         <div class="control">
-                                            <textarea class="textarea" name="Message" placeholder="Question/Comments"></textarea>
+                                            <textarea id="Message" class="textarea" name="Message" placeholder="Question/Comments"></textarea>
                                         </div>
                                     </div>
 
                                     <div class="field is-grouped">
                                         <div class="control">
-                                            <button class="button is-link" type="submit"()>Submit</button>
+                                            <button class="button is-link" id="submit" type="submit">Submit</button>
                             </form>
                         </div>
                     </div>
@@ -180,6 +180,9 @@
 
     <br>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </body>
 <footer id="foot" class="footer">
     <div class="content has-text-left">
