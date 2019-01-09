@@ -16,6 +16,7 @@ $("#submit").on("click", function() {
         $("#Organization").val("");
         $("#Email").val("");
         $("#Message").val("");
+        alert("thank you I will be in contact as soon as possible.")
       }
       );
     return false;
