@@ -4,9 +4,9 @@ var mongoose = require("mongoose");
 var mongojs = require("mongojs");
 var path = require("path");
 
-var PORT = process.env.PORT || 8000;
+var PORT = process.env.PORT || 8200;
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongolab-flexible-64294";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://recruit:cooltulip941@ds147684.mlab.com:47684/portfoliodb";
 
 
 
